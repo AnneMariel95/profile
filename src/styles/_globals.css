@@ -1,0 +1,116 @@
+:root {
+  --spacing-big: 3.125rem;
+  --spacing-medium: 1.5625rem;
+  --spacing-small: 0.625rem;
+  --spacing-very-small: 0.15625rem;
+
+  --color-primary-h: 335;
+  --color-constant-dark: hsl(335, 100%, 3%);
+  --color-constant-light: hsl(0, 0%, 100%);
+
+  --color-primary-100: hsl(335, 100%, 95%);
+  --color-primary-200: hsl(335, 100%, 85%);
+  --color-primary-300: hsl(335, 100%, 80%);
+  --color-primary-400: hsl(335, 100%, 75%);
+  --color-primary-500: hsl(335, 100%, 60%);
+  --color-primary-600: hsl(335, 100%, 50%);
+  --color-primary-700: hsl(335, 100%, 40%);
+  --color-primary-800: hsl(335, 100%, 30%);
+  --color-primary-900: hsl(335, 100%, 20%);
+}
+
+:root {
+  --color-primary: hsl(335, 100%, 30%);
+  --color-primary-light: hsl(335, 50%, 90%);
+  --color-primary-dark: hsl(335, 50%, 20%);
+
+  --color-dark: hsl(335, 100%, 3%);
+  --color-darkest: hsl(0, 0%, 0%);
+
+  --color-light: hsl(0, 0%, 95%);
+  --color-lightest: hsl(0, 0%, 100%);
+
+  --color-foreground: hsl(0, 0%, 0%);
+  --color-background: hsl(0, 0%, 100%);
+}
+
+.dark {
+  --color-foreground: hsl(0, 0%, 100%);
+  --color-background: var(335, 100%, 3%);
+  --color-primary: hsl(335, 100%, 30%);
+  --color-primary-dark: hsl(80, 69%, 49%);
+  --color-primary-light: hsl(335, 100%, 20%);
+
+  --color-light: hsl(0, 0%, 13%);
+  --color-lightest: hsl(0, 0%, 0%);
+
+  --color-dark: hsl(0, 0%, 95%);
+  --color-darkest: hsl(0, 0%, 100%);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  @apply text-black dark:text-white;
+  @apply bg-light;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  @apply text-base;
+}
+
+p {
+  @apply text-base;
+  @apply leading-normal;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+h1 {
+  text-align: center;
+  @apply font-black;
+  @apply text-2xl sm:text-4xl;
+  @apply text-black dark:text-white;
+  @apply my-6;
+}
+
+h2 {
+  @apply font-extrabold;
+  @apply text-xl sm:text-2xl;
+  @apply text-black dark:text-white;
+  @apply my-3;
+}
+
+h3 {
+  font-size: 1.8rem;
+  @apply font-bold;
+  @apply text-lg sm:text-xl;
+  @apply text-black dark:text-white;
+  @apply my-2;
+}
+
+h4 {
+  @apply font-semibold;
+  @apply text-lg sm:text-base;
+  @apply text-black dark:text-white;
+  @apply my-1;
+}
+
+h5,
+h6 {
+  @apply text-base;
+  @apply font-semibold;
+  @apply text-black dark:text-white;
+  @apply my-0.5;
+}
+
+svg {
+  @apply inline-block;
+}
