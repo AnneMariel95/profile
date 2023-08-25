@@ -56,7 +56,7 @@
     "gray-matter": "^4.0.3",
     "husky": "8.0.1",
     "jest": "28.1.3",
-    "jest-environment-jsdom": "28.1.3",
+    "jest-environment-jsdom": "29.6.4",
     "lint-staged": "13.0.3",
     "plaiceholder": "^2.4.0",
     "postcss": "8.4.16",
